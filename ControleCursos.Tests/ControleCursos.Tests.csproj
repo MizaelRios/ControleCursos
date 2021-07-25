@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ControleCursos.Api\ControleCursos.Api.csproj" />
-    <ProjectReference Include="..\ControleCursos\ControleCursos.Api.csproj" />
   </ItemGroup>
 
 </Project>

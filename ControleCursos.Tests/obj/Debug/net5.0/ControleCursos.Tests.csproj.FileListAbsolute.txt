@@ -19,3 +19,24 @@ C:\Dev2\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Test
 C:\Dev2\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.dll
 C:\Dev2\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ref\ControleCursos.Tests.dll
 C:\Dev2\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.pdb
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Api.deps.json
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Api.runtimeconfig.json
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Api.runtimeconfig.dev.json
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\appsettings.Development.json
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\appsettings.json
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Api.exe
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Tests.deps.json
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Tests.dll
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ref\ControleCursos.Tests.dll
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Tests.pdb
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Api.dll
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\bin\Debug\net5.0\ControleCursos.Api.pdb
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.csproj.AssemblyReference.cache
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.AssemblyInfoInputs.cache
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.AssemblyInfo.cs
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.csproj.CoreCompileInputs.cache
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.csproj.CopyComplete
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.dll
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ref\ControleCursos.Tests.dll
+C:\Projetos Back\ControleCursos\ControleCursos.Tests\obj\Debug\net5.0\ControleCursos.Tests.pdb

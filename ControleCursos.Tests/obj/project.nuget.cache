@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "KrzfY+A/IG5YeIs+vqMCpNc/EGznoQ71U1GIVNMYtH2FUd33WGqdNh73cXHncyOemyS808uWxhmbE81MvwL1lg==",
-  "success": false,
+  "dgSpecHash": "A3xwf+vwm4TVzt4u1QB79JavX7DpBDo16ekRSMHxrfxai1U/88wyHRiesfNZV0RSXPAZpiuVVZ/3BqnVcvS8pQ==",
+  "success": true,
   "projectFilePath": "C:\\Projetos Back\\ControleCursos\\ControleCursos.Tests\\ControleCursos.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mizae\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
@@ -171,15 +171,5 @@
     "C:\\Users\\mizae\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\mizae\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }

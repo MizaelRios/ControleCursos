@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace ControleCursos.Migrations
+namespace ControleCursos.Api.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210629112031_inicial")]
-    partial class inicial
+    [Migration("20210725162241_Inicial")]
+    partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,61 +21,61 @@ namespace ControleCursos.Migrations
                 .HasAnnotation("ProductVersion", "5.0.7")
                 .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-            modelBuilder.Entity("ControleCursos.Data.Categoria", b =>
+            modelBuilder.Entity("ControleCursos.Api.Models.Categoria", b =>
                 {
-                    b.Property<int>("codigo")
+                    b.Property<int>("Codigo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<string>("descricao")
+                    b.Property<string>("Descricao")
                         .IsRequired()
                         .HasMaxLength(20)
                         .HasColumnType("character varying(20)");
 
-                    b.HasKey("codigo");
+                    b.HasKey("Codigo");
 
                     b.ToTable("categoria");
                 });
 
             modelBuilder.Entity("ControleCursos.Data.Curso", b =>
                 {
-                    b.Property<int>("codigo")
+                    b.Property<int>("Codigo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
-                    b.Property<int?>("categoriacodigo")
+                    b.Property<int?>("CategoriaCodigo")
                         .HasColumnType("integer");
 
-                    b.Property<DateTime>("dataInicio")
+                    b.Property<DateTime>("DataInicio")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<DateTime>("dataTermino")
+                    b.Property<DateTime>("DataTermino")
                         .HasColumnType("timestamp without time zone");
 
-                    b.Property<string>("descricaoAssunto")
+                    b.Property<string>("DescricaoAssunto")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("character varying(100)");
 
-                    b.Property<int>("qtdAlunosTurma")
+                    b.Property<int>("QtdAlunosTurma")
                         .HasColumnType("integer");
 
-                    b.HasKey("codigo");
+                    b.HasKey("Codigo");
 
-                    b.HasIndex("categoriacodigo");
+                    b.HasIndex("CategoriaCodigo");
 
                     b.ToTable("cursos");
                 });
 
             modelBuilder.Entity("ControleCursos.Data.Curso", b =>
                 {
-                    b.HasOne("ControleCursos.Data.Categoria", "categoria")
+                    b.HasOne("ControleCursos.Api.Models.Categoria", "Categoria")
                         .WithMany()
-                        .HasForeignKey("categoriacodigo");
+                        .HasForeignKey("CategoriaCodigo");
 
-                    b.Navigation("categoria");
+                    b.Navigation("Categoria");
                 });
 #pragma warning restore 612, 618
         }

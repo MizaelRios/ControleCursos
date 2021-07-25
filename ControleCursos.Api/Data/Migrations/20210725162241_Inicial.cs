@@ -2,9 +2,9 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace ControleCursos.Migrations
+namespace ControleCursos.Api.Migrations
 {
-    public partial class inicial : Migration
+    public partial class Inicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -12,42 +12,42 @@ namespace ControleCursos.Migrations
                 name: "categoria",
                 columns: table => new
                 {
-                    codigo = table.Column<int>(type: "integer", nullable: false)
+                    Codigo = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    descricao = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false)
+                    Descricao = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_categoria", x => x.codigo);
+                    table.PrimaryKey("PK_categoria", x => x.Codigo);
                 });
 
             migrationBuilder.CreateTable(
                 name: "cursos",
                 columns: table => new
                 {
-                    codigo = table.Column<int>(type: "integer", nullable: false)
+                    Codigo = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    descricaoAssunto = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    dataInicio = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
-                    dataTermino = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
-                    qtdAlunosTurma = table.Column<int>(type: "integer", nullable: false),
-                    categoriacodigo = table.Column<int>(type: "integer", nullable: true)
+                    DescricaoAssunto = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    DataInicio = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
+                    DataTermino = table.Column<DateTime>(type: "timestamp without time zone", nullable: false),
+                    QtdAlunosTurma = table.Column<int>(type: "integer", nullable: false),
+                    CategoriaCodigo = table.Column<int>(type: "integer", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_cursos", x => x.codigo);
+                    table.PrimaryKey("PK_cursos", x => x.Codigo);
                     table.ForeignKey(
-                        name: "FK_cursos_categoria_categoriacodigo",
-                        column: x => x.categoriacodigo,
+                        name: "FK_cursos_categoria_CategoriaCodigo",
+                        column: x => x.CategoriaCodigo,
                         principalTable: "categoria",
-                        principalColumn: "codigo",
+                        principalColumn: "Codigo",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_cursos_categoriacodigo",
+                name: "IX_cursos_CategoriaCodigo",
                 table: "cursos",
-                column: "categoriacodigo");
+                column: "CategoriaCodigo");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

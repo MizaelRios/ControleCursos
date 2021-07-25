@@ -9170,7 +9170,6 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj",
       "ControleCursos.Api >= 1.0.0",
       "MSTest.TestFramework >= 2.2.5"
     ]
@@ -9209,9 +9208,6 @@
           "projectReferences": {
             "C:\\Projetos Back\\ControleCursos\\ControleCursos.Api\\ControleCursos.Api.csproj": {
               "projectPath": "C:\\Projetos Back\\ControleCursos\\ControleCursos.Api\\ControleCursos.Api.csproj"
-            },
-            "C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj": {
-              "projectPath": "C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj"
             }
           }
         }
@@ -9249,16 +9245,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }
