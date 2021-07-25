@@ -18,27 +18,27 @@ namespace controleCursos.Tests
                 List<Curso> cursos = new List<Curso>();
                 cursos.Add(new Curso()
                 {
-                    descricaoAssunto = "Curso de C#",
-                    dataInicio = DateTime.Now,
-                    dataTermino = DateTime.Now,
-                    qtdAlunosTurma = 10,
-                    categoria = new Categoria() { descricao = "Programação" }
+                    DescricaoAssunto = "Curso de C#",
+                    DataInicio = DateTime.Now,
+                    DataTermino = DateTime.Now,
+                    QtdAlunosTurma = 10,
+                    Categoria = new Categoria() { Descricao = "Programação" }
                 });
                 cursos.Add(new Curso()
                 {
-                    descricaoAssunto = "Curso de Banco de Dados",
-                    dataInicio = DateTime.Now,
-                    dataTermino = DateTime.Now,
-                    qtdAlunosTurma = 5,
-                    categoria = new Categoria() { descricao = "Programação" }
+                    DescricaoAssunto = "Curso de Banco de Dados",
+                    DataInicio = DateTime.Now,
+                    DataTermino = DateTime.Now,
+                    QtdAlunosTurma = 5,
+                    Categoria = new Categoria() { Descricao = "Programação" }
                 });
 
                 var curso = new Curso();
-                curso.descricaoAssunto = "Curso de Banco de Python";
-                curso.dataInicio = DateTime.Now;
-                curso.dataTermino = DateTime.Now;
-                curso.qtdAlunosTurma = 10;
-                curso.categoria = new Categoria() { descricao = "Programação" };
+                curso.DescricaoAssunto = "Curso de Banco de Python";
+                curso.DataInicio = DateTime.Now;
+                curso.DataTermino = DateTime.Now;
+                curso.QtdAlunosTurma = 10;
+                curso.Categoria = new Categoria() { Descricao = "Programação" };
 
                 Assert.IsFalse(curso.PeriodoValido(cursos,curso));
             }

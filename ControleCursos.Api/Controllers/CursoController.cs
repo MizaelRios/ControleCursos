@@ -17,7 +17,7 @@ namespace ControleCursos.Controllers
         public CursoController(AppDbContext context)
         {
             _context = context;
-            _context.cursos.Include(c => c.categoria).ToList();
+            _context.cursos.Include(c => c.Categoria).ToList();
             
         }
 
@@ -48,7 +48,7 @@ namespace ControleCursos.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCurso(int id, Curso curso)
         {
-            if (id != curso.codigo)
+            if (id != curso.Codigo)
             {
                 return BadRequest($"O curso com o código = {id} não poderá ser editado pois não consta na base de dados.");
             }
@@ -58,7 +58,7 @@ namespace ControleCursos.Controllers
                 return BadRequest(new { message = $"Existe(m) curso(s) planejado(s) dentro do período informado." });
             }
 
-            if (curso.dataInicio < DateTime.Now)
+            if (curso.DataInicio < DateTime.Now)
             {
                 return BadRequest(new { message = $"Data início não pode ser menor que data atual." });
             }
@@ -93,7 +93,7 @@ namespace ControleCursos.Controllers
                 return BadRequest(new { message = $"Existe(m) curso(s) planejado(s) dentro do período informado." });
             }
 
-            if (curso.dataInicio < DateTime.Now)
+            if (curso.DataInicio < DateTime.Now)
             {
                 return BadRequest(new { message = $"Data início nao pode ser menor que data atual." });
             }
@@ -101,7 +101,7 @@ namespace ControleCursos.Controllers
             _context.cursos.Add(curso);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCurso", new { id = curso.codigo }, curso);
+            return CreatedAtAction("GetCurso", new { id = curso.Codigo }, curso);
         }
 
         // DELETE: api/Curso/5
@@ -123,7 +123,7 @@ namespace ControleCursos.Controllers
 
         private bool CursoExists(int id)
         {
-            return _context.cursos.Any(e => e.codigo == id);
+            return _context.cursos.Any(e => e.Codigo == id);
         }
     }
 }

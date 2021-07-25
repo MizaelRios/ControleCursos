@@ -10,18 +10,18 @@ namespace ControleCursos.Data
     public class Curso
     {
 
-        public int codigo { get; set; }
-        public string descricaoAssunto { get; set; }
-        public DateTime dataInicio { get; set; }
-        public DateTime dataTermino { get; set; }
-        public int qtdAlunosTurma { get; set; }
-        public Categoria categoria { get; set; }
+        public int Codigo { get; set; }
+        public string DescricaoAssunto { get; set; }
+        public DateTime DataInicio { get; set; }
+        public DateTime DataTermino { get; set; }
+        public int QtdAlunosTurma { get; set; }
+        public Categoria Categoria { get; set; }
 
         public Boolean PeriodoValido(List<Curso> cursos, Curso curso)
         {
             foreach (Curso aPart in cursos)
             {
-                if(aPart.dataInicio.Month == curso.dataInicio.Month) { return false; }
+                if(aPart.DataInicio.Month == curso.DataInicio.Month) { return false; }
             }
 
             return true;

@@ -271,3 +271,4 @@ C:\Dev2\ControleCursos\ControleCursos.Api\obj\Debug\net5.0\ControleCursos.Api.dl
 C:\Dev2\ControleCursos\ControleCursos.Api\obj\Debug\net5.0\ref\ControleCursos.Api.dll
 C:\Dev2\ControleCursos\ControleCursos.Api\obj\Debug\net5.0\ControleCursos.Api.pdb
 C:\Dev2\ControleCursos\ControleCursos.Api\obj\Debug\net5.0\ControleCursos.Api.genruntimeconfig.cache
+C:\Dev2\ControleCursos\ControleCursos.Api\obj\Debug\net5.0\ControleCursos.Api.csproj.AssemblyReference.cache

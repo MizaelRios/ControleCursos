@@ -19,37 +19,37 @@ namespace ControleCursos.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Curso>()
-                .HasKey(c => c.codigo);
+                .HasKey(c => c.Codigo);
 
             modelBuilder.Entity<Curso>()
-                .Property(c => c.codigo)
+                .Property(c => c.Codigo)
                 .ValueGeneratedOnAdd();
 
             modelBuilder.Entity<Curso>()
-                .Property(c => c.descricaoAssunto)
+                .Property(c => c.DescricaoAssunto)
                 .HasMaxLength(100);
 
             modelBuilder.Entity<Curso>()
-               .Property(c => c.descricaoAssunto)
+               .Property(c => c.DescricaoAssunto)
                .IsRequired(true);
 
             modelBuilder.Entity<Curso>()
-               .Property(c => c.dataInicio)
+               .Property(c => c.DataInicio)
                .IsRequired(true);
 
             modelBuilder.Entity<Curso>()
-               .Property(c => c.dataTermino)
+               .Property(c => c.DataTermino)
                .IsRequired(true);
 
             modelBuilder.Entity<Categoria>()
-                .HasKey(c => c.codigo);
+                .HasKey(c => c.Codigo);
 
             modelBuilder.Entity<Categoria>()
-                .Property(c => c.descricao)
+                .Property(c => c.Descricao)
                 .IsRequired(true);
             
             modelBuilder.Entity<Categoria>()
-                .Property(c => c.descricao)
+                .Property(c => c.Descricao)
                 .HasMaxLength(20);
         }
     }

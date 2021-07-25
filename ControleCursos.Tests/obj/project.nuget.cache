@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J/jQ1i8x/UlQpv7Qs+kyrFbAbx9Vk5bQcepTsmL+YCRGMCWDZWfTtSwD/rFQNGpaUuxjadSrNaSh16s1qbZxKQ==",
-  "success": true,
-  "projectFilePath": "C:\\Dev2\\ControleCursos\\ControleCursos.Tests\\ControleCursos.Tests.csproj",
+  "dgSpecHash": "KrzfY+A/IG5YeIs+vqMCpNc/EGznoQ71U1GIVNMYtH2FUd33WGqdNh73cXHncyOemyS808uWxhmbE81MvwL1lg==",
+  "success": false,
+  "projectFilePath": "C:\\Projetos Back\\ControleCursos\\ControleCursos.Tests\\ControleCursos.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mizae\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\mizae\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
@@ -171,5 +171,15 @@
     "C:\\Users\\mizae\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\mizae\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Projetos Back\\ControleCursos\\ControleCursos\\ControleCursos.Api.csproj",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
