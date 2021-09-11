@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A3xwf+vwm4TVzt4u1QB79JavX7DpBDo16ekRSMHxrfxai1U/88wyHRiesfNZV0RSXPAZpiuVVZ/3BqnVcvS8pQ==",
+  "dgSpecHash": "Ji49pFvNGtGKLUIBMW+4SVHCSX8vX7YuMTxcwOix3kH8Rk3mNQE2b2MUcZpcfLHe1MX77jUziLEOdLU/sR0BOQ==",
   "success": true,
-  "projectFilePath": "C:\\Projetos Back\\ControleCursos\\ControleCursos.Tests\\ControleCursos.Tests.csproj",
+  "projectFilePath": "C:\\Projetos\\ControleCursos\\ControleCursos.Tests\\ControleCursos.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mizae\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
     "C:\\Users\\mizae\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
